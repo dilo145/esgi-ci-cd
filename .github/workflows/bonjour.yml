@@ -6,10 +6,9 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
-      - run: ls -l
-      - run: sudo apt-get install cowsay
-      - run: cat README.md | cowsay
-      - run: sudo apt-get install fortune
-      - run: fortune
-      - run: sudo apt-get install toilet
-      - run: toilet
+      - run: |
+          sudo apt-get update
+          sudo apt-get install --yes cowsay fortune toilet
+          cat README.md | cowsay
+          fortune
+          toilet
