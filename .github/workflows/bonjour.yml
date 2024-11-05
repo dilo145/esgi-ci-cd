@@ -11,3 +11,5 @@ jobs:
       - run: cat README.md | cowsay
       - run: sudo apt-get install fortune
       - run: fortune
+      - run: sudo apt-get install toilet
+      - run: toilet
