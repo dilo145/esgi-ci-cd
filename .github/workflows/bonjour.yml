@@ -7,5 +7,5 @@ jobs:
     steps:
       - run: ls -l
       - name: Check out repository code
-        uses: actions/esgi-ci-cd@v1
+        uses: dilo145/esgi-ci-cd
       - run: ls -l
