@@ -5,7 +5,7 @@ jobs:
   dire_bonjour:
     runs-on: ubuntu-22.04
     steps:
-      - run: ls -l # Liste les fichier du répertoire courant
+      - run: ls -l
       - name: Check out repository code
-        uses: dilo145/esgi-ci-cd
-      - run: ls -l # Liste les fichier du répertoire courant
+        uses: actions/esgi-ci-cd
+      - run: ls -l
