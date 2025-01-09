@@ -31,5 +31,5 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         with:
           push: true
-          context: ./../../Dockerfiles/docker-node
+          context: ./Dockerfiles/docker-node
           tags: "dilo145/node:${{ github.ref_name }}"
