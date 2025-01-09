@@ -22,8 +22,11 @@ jobs:
       
       - name: check ls repo
         run: ls
+      
+      - name: check ls Dockerfiles 1
+        run: ls Dockerfiles
 
-      - name: check ls Dockerfile
+      - name: check ls Dockerfile 2
         run: ls ./../../Dockerfiles/docker-node
 
       - name: "Build and Push Docker Image"
