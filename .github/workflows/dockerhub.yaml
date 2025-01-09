@@ -19,12 +19,6 @@ jobs:
         with:
           username: "dilo145"
           password: "${{ secrets.DOCKERHUB_TOKEN }}"
-      
-      - name: check ls repo
-        run: ls
-      
-      - name: check ls Dockerfiles 1
-        run: ls Dockerfiles
 
       - name: "Build and Push Docker Image"
         uses: docker/build-push-action@v6
